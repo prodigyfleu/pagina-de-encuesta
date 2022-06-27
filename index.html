@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para free code camp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2883b800e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Encuesta de satifacción</h1>
+        <p id="description">te agradecemos tomarte el tiempo para completar la siguiente encuesta</p>
+    </header>
+
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+
+        <fieldset>
+            <label id="name-label">Nombre<input id="name" type="texto" required></label>
+            <label>Apellido<input type="text" id="apellido" required></label>
+            <label id="email-label">Correo electronico<input type="email" id="email" required></label>
+            <label>Numero de celular<input type="text" id="celular" pattern="[0-9]{10}"required></label> 
+            <label id="number-label">edad <input type="number" id="number" max="99" min="18" required></label>         
+        </fieldset>
+
+        <fieldset>
+        <div class="numerico">
+            <label>
+                <p>¿se solucionó tu problema?</p>
+                <label class="radio"><input type="radio" name="satifecho" id="satisfecho1" value="1" required>si</label>
+                <label class="radio"><input type="radio" name="satifecho" id="satisfecho2" value="2" required>no</label>
+            </label>
+        </div>
+        <div class="numerico">      
+            <label>
+                <p>¿del 1 al 5 como calificas la atención prestada?</p>
+                <label class="radio"><input type="radio" name="satifecho2" id="satisfecho4" value="1" required>1</label>
+                <label class="radio"><input type="radio" name="satifecho2" id="satisfecho5" value="2" required>2</label>
+                <label class="radio"><input type="radio" name="satifecho2" id="satisfecho6" value="3" required>3</label>
+                <label class="radio"><input type="radio" name="satifecho2" id="satisfecho7" value="3" required>4</label>
+                <label class="radio"><input type="radio" name="satifecho2" id="satisfecho8" value="3" required>5</label>
+            </label>
+        </div>
+        <div class="numerico">
+            <label>
+                <p>¿del 1 al 5 que tan probable es que nos recomiendes siendo 1 muy poco probable y 5 muy probable?</p>
+                    <label class="radio"><input type="radio" name="satifecho3" id="satisfecho4" value="1" required>1</label>
+                    <label class="radio"><input type="radio" name="satifecho3" id="satisfecho5" value="2" required>2</label>
+                    <label class="radio"><input type="radio" name="satifecho3" id="satisfecho6" value="3" required>3</label>
+                    <label class="radio"><input type="radio" name="satifecho3" id="satisfecho7" value="3" required>4</label>
+                    <label class="radio"><input type="radio" name="satifecho3" id="satisfecho8" value="3" required>5</label>
+            </label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <label>¿como te enteraste de nosotros?
+                <select name="referrer" id="dropdown">
+                    <option value="">Selecciona a continuación</option>
+                    <option value="">Facebook</option>
+                    <option value="">Youtube</option>
+                    <option value="">Prensa</option>
+                    <option value="">Universidad</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>¿tienes comentarios al respecto de nuestro servicio?
+                <textarea name="comentarios" id="comen" cols="20" rows="8" placeholder="(opcional)"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+            <input type="submit" value="Enviar" id="submit"/>
+            </label>
+        </fieldset>
+    </form>
+
+    <footer class="pie">
+        <div class="box">
+            <figure>
+                <a href="#"></a>
+            </figure>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </footer>
+    
+</body>
+</html>
